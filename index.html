@@ -128,10 +128,10 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <p>
-        <img src="static/images/pipline.jpg" alt="Learning from model weights" class="blend-img-background center-image" style="max-width: 100%; height: auto;">
+        <img src="/static/images/pipline.jpg" alt="Learning from model weights" class="blend-img-background center-image" style="max-width: 100%; height: auto;">
       </p>
       <br>
-      <p>
+      <p id="pDiv">
         The model integrates modality-wise adaptive gating(<strong>MAG</strong>), intra- and inter-modal Transformer fusion, and cross-instance embedding regularization(<strong>CER</strong>) to achieve robust multimodal representation learning under noisy or missing modality conditions.
       </p>
     </div>
@@ -146,7 +146,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p id="pDiv">
+          <p>
             Traditional vision-based material perception methods suffer from severe performance degradation in visually impaired scenarios, making non-visual multimodal material perception a prominent research direction. However, existing methods often naively fuse multiple modality inputs, neglecting both the modality noise and missing modalities prevalent in realworld scenarios, as well as the dynamic variation in modality importance for specific tasks, leading to poor performance in several benchmark tasks. In this paper, we propose a robust multimodal fusion framework, TouchFormer. Specifically, we employ a Modality-Adaptive Gating(MAG) mechanism and intra- and inter-modality attention mechanisms to adaptively integrate cross-modal features, enhancing modelrobustness. Additionally, we introduce a Cross-Instance Embedding Regularization(CER) strategy, which significantly improves classification accuracy in fine-grained subcategory material recognition tasks. Experimental results demonstrate that, compared to existing non-visual methods, the proposed TouchFormer framework achieves classification accuracy improvements of 2.48% and 7.64% on SSMC and USMC tasks, respectively. Furthermore, real-world robotic experiments validate the effectiveness of the TouchFormer framework in enabling robots to understand their environment and infer appropriate operational strategies, highlighting its potential for applications in emergency response and industrial scenarios. Videos and code are available at our project website https://touchformer.github.io/TouchFormer/.
           </p>
         </div>
@@ -196,51 +196,41 @@
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container"> -->
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Video for Simulated Fire Scenario</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div class = "level-set has-text-justified">
+        <p id="pDiv">
+          This task simulates key complexities inherent in fire environments, characterized by three principal constraints: compromised visibility, confined spatial configurations, and dense object distributions.
+        </p>
+      </div>
+      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
             <source src="static/videos/non-audio.mp4"
             type="video/mp4">
           </video>
+          <br>
+          <p id="pDiv">
+            Robotic experiment in the normal scenario.
+          </p>
         </div>
+        <!-- <br> -->
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
             <source src="static/videos/fire.mp4"
             type="video/mp4">
           </video>
+          <!-- <br> -->
+          <p id="pDiv">
+            Robotic experiment in the filr scenario.
+          </p>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </section>
