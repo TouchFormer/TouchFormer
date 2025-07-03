@@ -146,7 +146,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Traditional vision-based material perception methods suffer from severe performance degradation in visually impaired scenarios, making non-visual multimodal material perception a prominent research direction. However, existing methods often naively fuse multiple modality inputs, neglecting both the modality noise and missing modalities prevalent in realworld scenarios, as well as the dynamic variation in modality importance for specific tasks, leading to poor performance in several benchmark tasks. In this paper, we propose a robust multimodal fusion framework, TouchFormer. Specifically, we employ a Modality-Adaptive Gating(MAG) mechanism and intra- and inter-modality attention mechanisms to adaptively integrate cross-modal features, enhancing modelrobustness. Additionally, we introduce a Cross-Instance Embedding Regularization(CER) strategy, which significantly improves classification accuracy in fine-grained subcategory material recognition tasks. Experimental results demonstrate that, compared to existing non-visual methods, the proposed TouchFormer framework achieves classification accuracy improvements of 2.48% and 7.64% on SSMC and USMC tasks, respectively. Furthermore, real-world robotic experiments validate the effectiveness of the TouchFormer framework in enabling robots to understand their environment and infer appropriate operational strategies, highlighting its potential for applications in emergency response and industrial scenarios. Videos and code are available at our project website https://touchformer.github.io/TouchFormer/.
+            Traditional vision-based material perception methods suffer from severe performance degradation in visually impaired scenarios, making non-visual multimodal material perception a prominent research direction. However, existing methods often naively fuse multiple modality inputs, neglecting both the modality noise and missing modalities prevalent in realworld scenarios, as well as the dynamic variation in modality importance for specific tasks, leading to poor performance in several benchmark tasks. In this paper, we propose a robust multimodal fusion framework, TouchFormer. Specifically, we employ a Modality-Adaptive Gating(MAG) mechanism and intra- and inter-modality attention mechanisms to adaptively integrate cross-modal features, enhancing modelrobustness. Additionally, we introduce a Cross-Instance Embedding Regularization(CER) strategy, which significantly improves classification accuracy in fine-grained subcategory material recognition tasks. Experimental results demonstrate that, compared to existing non-visual methods, the proposed TouchFormer framework achieves classification accuracy improvements of 2.48% and 7.64% on SSMC and USMC tasks, respectively. Furthermore, real-world robotic experiments validate the effectiveness of the TouchFormer framework in enabling robots to understand their environment and infer appropriate operational strategies, highlighting its potential for applications in emergency response and industrial scenarios.
           </p>
         </div>
       </div>
@@ -198,23 +198,23 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel" >
-       <div class="item">
+       <div class="item is-centered">
         <!-- Your image here -->
-        <img src="static/images/matrix.png" alt="MY ALT TEXT" style="max-width: 500px;"/>
+        <img src="static/images/matrix.png" alt="MY ALT TEXT" style="max-width: 800px;"/>
         <h2 class="subtitle">
           (a) Coarse-grained classification results across 8 material classes. (b) Fine-grained classification results (e.g., using category C6 as an example). TouchFormer demonstrates strong discriminative ability at both granularity levels.
         </h2>
       </div>
-      <div class="item">
+      <div class="item is-centered">
         <!-- Your image here -->
-        <img src="static/images/tsne.png" alt="MY ALT TEXT" style="max-width: 500px;"/>
+        <img src="static/images/tsne.png" alt="MY ALT TEXT" style="max-width: 800px;"/>
         <h2 class="subtitle" >
           Visualization of subclass embeddings with and without CER. t-SNE plots of feature embeddings for coarse- and fine-grained classification. Incorporating CER yields improved inter-class separation and intra-class compactness.
         </h2>
       </div>
-      <div class="item">
+      <div class="item is-centered">
         <!-- Your image here -->
-        <img src="static/images/plot_curve.png" alt="MY ALT TEXT" style="max-width: 500px;"/>
+        <img src="static/images/plot_curve.png" alt="MY ALT TEXT" style="max-width: 800px;"/>
         <h2 class="subtitle">
          Anti-Inference analysis. We compare the classification performance of TouchFormer and other method under varying corruption ratios(p). TouchFormer consistently achieves higher accuracy across different noise levels, demonstrating enhanced robustness.
        </h2>
