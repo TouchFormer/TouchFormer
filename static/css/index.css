@@ -112,6 +112,8 @@ body {
 
 .results-carousel {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .results-carousel .item {
